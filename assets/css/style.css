@@ -1,3 +1,11 @@
+/* GLOBAL STYLES */
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -90,8 +98,96 @@
     border-radius: 14px;
     transition: all 0.3s ease-in-out;
     gap: 0 4px;
+    margin-bottom: 16px;
 }
 
 .upsell__button:hover {
     opacity: 0.7;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    padding: 32px 44px;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 54px;
+    color: #404040;
+    margin-bottom: 4px;
+}
+
+.header__description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AEAEAE;
+}
+
+/* USER ACTIONS */
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+/* USER ACTION MESSAGE */
+
+.user-actions-message {
+    margin-right: 20px;
+    line-height: 0;
+}
+
+/* USER ACTION ALERT */
+
+.user-actions-alert {
+    position: relative;
+    margin-right: 24px;
+    line-height: 0;
+}
+
+.user-actions-alert__notifications {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #BB4430;
+}
+
+/* USER ACTION PROFILE */
+
+.user-actions-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions-profile__avatar {
+    margin-right: 8px;
+}
+
+.user-actions-profile__name {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #404040;
+}
+
+.user-actions-profile__role {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #AEAEAE;
 }
