@@ -1,0 +1,97 @@
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: min(100%, 253px);
+    height: 100%;
+    border-right: 2px solid #EBEBEB;
+    padding: 168px 36px 32px 40px;
+}
+
+/* MENU */
+
+.nav__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #C7C7C7;
+    padding: 4px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__icon {
+    margin-right: 18px;
+}
+
+.nav__icon rect{
+    fill: transparent;
+}
+
+.nav__icon path {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    background-color: #F0F7FF;
+    color: #197880;
+}
+
+.nav__link--active .nav__icon path,
+.nav__link:hover .nav__icon path{
+    stroke: #197880;
+}
+
+/* UPSELL */
+
+.upsell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.upsell__ilustration {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.upsell__description {
+    max-width: min(100%, 130px);
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #404040;
+    margin-bottom: 16px;
+}
+
+.upsell__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 164px);
+    height: 40px;
+    background: #FFC145;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #404040;
+    border-radius: 14px;
+    transition: all 0.3s ease-in-out;
+    gap: 0 4px;
+}
+
+.upsell__button:hover {
+    opacity: 0.7;
+}
